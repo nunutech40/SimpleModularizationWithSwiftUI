@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  App
 //
-//  Created by Gilang Ramadhan on 26/10/20.
+//  Created by Nunu Nugraha on 02/07/22.
 //
 
 import SwiftUI
@@ -11,23 +11,25 @@ import Cart
 import Product
 
 struct ContentView: View {
-  var body: some View {
-    NavigationView {
-      VStack {
-        NavigationLink(
-          destination: ProductView(action: {
-            CartView(action: { ProductDetailView() })
-          })
-        ) {
-          Text("Open Product")
+    var body: some View {
+        NavigationView {
+            VStack {
+                NavigationLink(
+                    destination: ProductView(action: {
+                    CartView(action: {
+                        ProductDetailView() })
+                })
+                ) {
+                    Text("Open Product")
+                }
+                Text(hello)
+            }.navigationTitle("Modular")
         }
-      }.navigationBarTitle("Modular")
     }
-  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView()
-  }
+    static var previews: some View {
+        ContentView()
+    }
 }

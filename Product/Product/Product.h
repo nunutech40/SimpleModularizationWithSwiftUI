@@ -2,7 +2,7 @@
 //  Product.h
 //  Product
 //
-//  Created by Gilang Ramadhan on 27/10/20.
+//  Created by Nunu Nugraha on 02/07/22.
 //
 
 #import <Foundation/Foundation.h>
